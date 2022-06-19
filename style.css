@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(203deg 46% 64%);
+}
+main {
+  background-color: white;
+  width: 300px;
+  height: 320px;
+  margin: 8rem auto;
+}
+.flex {
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.flex:first-of-type {
+  border-bottom: 1px solid hsl(0deg 0% 96%);
+  color: hsl(206deg 13% 65%);
+}
+.flex:last-of-type {
+  border-top: 1px solid hsl(0deg 0% 96%);
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+}
+.plus,
+.seven,
+.sixteen,
+.nineteen {
+  border: 1px solid hsl(16deg 70% 67%);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.sixteen,
+.nineteen {
+  position: relative;
+}
+.sixteen,
+.nineteen,
+.seven {
+  padding: 0.18rem;
+  margin: 0;
+}
+.sixteen::after,
+.nineteen::after {
+  position: absolute;
+  content: "5";
+  color: white;
+  background-color: hsl(326deg 35% 57%);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  top: -0.4rem;
+  left: 0.9rem;
+}
+.nineteen::after {
+  background-color: hsl(16deg 70% 57%);
+}
+.seven {
+  background-color: hsl(16deg 70% 57%);
+  color: white;
+}
+
+table {
+  border-spacing: 5px;
+  font-size: 0.7rem;
+  padding: 0.5rem 1.2rem;
+}
+td,
+th {
+  padding: 5px;
+}
+th {
+  color: hsl(214deg 8% 58%);
+}
+.fade {
+  color: hsl(0deg 0% 93%);
+}
